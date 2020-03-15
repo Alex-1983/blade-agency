@@ -1,0 +1,26 @@
+// Базовая типографика
+
+$font-family: "lato", "Arial", sans-serif;
+$font-family-secondary: "playfair-display", sans-serif;
+
+$font-size:                   18px;
+$line-height:                 1.5;
+
+// Семантические цвета
+
+$text-color:                  #303030;
+$white:                       #ffffff;
+$h2-color:                    #1c1515;
+$black:                       #000000;
+$yellow:                      #f2c03f;
+
+// Ширины
+
+$screen-sm:                   767px;
+$screen-md:                   1023px;
+$screen-lg:                   1920px;
+
+// Ретина
+
+$retina-dpi:                  144dpi;
+$retina-dppx:                 1.5dppx;

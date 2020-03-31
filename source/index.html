@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Показ лучших молодых  дизайнеров России">
+    <meta name="description" content="Показ лучших молодых дизайнеров России">
     <meta name="format-detection" content="telephone=no">
     <meta name="format-detection" content="date=no">
     <meta name="format-detection" content="address=no">
@@ -25,8 +25,15 @@
   </head>
 
   <body>
-
-    <div>qwert</div>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+    <!-- main-header -->
+    <include src="source/templates/main-header.html"></include>
+    <!-- main-content -->
+    <main class="main-content">
+      <include src="source/templates/advertisement.html"></include>
+    </main>
   </body>
 
 </html>

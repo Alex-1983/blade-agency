@@ -3,5 +3,17 @@
 @import "fonts";
 @import "variables";
 @import "scaffolding";
-@import "mixins";
 @import "global";
+
+/* blocks
+================================*/
+@import "blocks/main-header";
+@import "blocks/burger";
+@import "blocks/site-list";
+@import "blocks/language-block";
+@import "blocks/social";
+@import "blocks/sections-toggles";
+@import "blocks/advertisement";
+@import "blocks/info-list";
+@import "blocks/toggles";
+@import "blocks/number";

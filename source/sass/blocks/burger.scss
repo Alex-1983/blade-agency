@@ -1,0 +1,87 @@
+.burger {
+  display: none;
+}
+
+.js .burger {
+  @media (max-width: $screen-md) {
+    position: absolute;
+    top: 42px;
+    right: 48px;
+    z-index: 1;
+
+    display: inline-block;
+
+    margin: 0;
+    padding: 0;
+    width: 28px;
+    height: 25px;
+
+    cursor: pointer;
+    user-select: none;
+
+    border: none;
+    background-color: transparent;
+
+    @media (max-width: $screen-sm) {
+      top: 24px;
+      right: 24px;
+    }
+
+    > span {
+      position: absolute;
+      top: 50%;
+      right: 0;
+
+      display: inline-block;
+
+      width: 71%;
+      height: 3px;
+
+      transform: translateY(-50%);
+      transition: background 0.3s 0.3s;
+      vertical-align: middle;
+
+      border-radius: 3px;
+      background-color: $white;
+
+      &:first-child,
+      &:last-child {
+        width: 100%;
+
+        transition: top 0.3s 0.3s, transform 0.3s;
+        transform-origin: 50% 50%;
+      }
+
+      &:first-child {
+        top: 6px;
+      }
+
+      &:last-child {
+        top: 20px;
+      }
+    }
+
+    &--close {
+      > span {
+        transition: background 0.3s 0s;
+
+        background-color: transparent;
+
+        &:first-child,
+        &:last-child {
+          top: 11px;
+          background-color: $white;
+          transition: top 0.3s, transform 0.3s 0.3s;
+        }
+
+        &:first-child {
+          transform: rotate3d(0, 0, 1, 45deg);
+        }
+
+        &:last-child {
+          transform: rotate3d(0, 0, 1, -45deg);
+        }
+      }
+    }
+  }
+}

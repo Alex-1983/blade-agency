@@ -1,0 +1,161 @@
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+
+  width: 100%;
+
+  transition: background 0.1s ease;
+
+  background-color: $purple;
+  background-repeat: no-repeat;
+
+  @media (max-width: $screen-md) {
+    min-height: 92px;
+  }
+}
+
+.main-header__inner {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 4.166vw;
+  padding-left: 2.083vw;
+  max-width: 1920px;
+
+  @media (max-width: $screen-md) {
+    padding-right: 24px;
+    padding-left: 24px;
+    width: 100%;
+  }
+
+  @media (max-width: $screen-sm) {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+
+.main-header__title {
+  @media (max-width: $screen-md) {
+    position: absolute;
+    top: 0;
+    left: 24px;
+    z-index: 1;
+  }
+
+  @media (max-width: $screen-sm) {
+    left: 0;
+  }
+}
+
+.main-header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 13.541vw;
+  height: 7.552vw;
+
+  background-color: $white;
+
+  @media (max-width: $screen-md) {
+    width: 138px;
+    height: 92px;
+  }
+
+  @media (max-width: $screen-sm) {
+    width: 108px;
+    height: 72px;
+  }
+}
+
+.main-header__logo img {
+  width: 9.366vw;
+  height: 2.187vw;
+
+  @media (max-width: $screen-md) {
+    width: 103.41px;
+    height: 24.15px;
+  }
+
+  @media (max-width: $screen-sm) {
+    width: 80.93px;
+    height: 18.9px;
+  }
+}
+
+.main-header__main-nav {
+  @media (max-width: $screen-md) {
+    order: 1;
+
+    margin-bottom: 68px;
+  }
+
+  @media (max-width: $screen-sm) {
+    margin-bottom: 48px;
+  }
+}
+
+.main-header__language {
+  margin-left: 5.7vw;
+
+  @media (max-width: $screen-md) {
+    margin: 45px 0 27px 70.2vw;
+  }
+
+  @media (max-width: $screen-sm) {
+    margin-top: 27px;
+    margin-left: 38.3vw;
+  }
+}
+
+.main-header__social {
+  display: none;
+}
+
+.main-header--open .main-header__social {
+  @media (max-width: $screen-md) {
+    display: flex;
+    flex-wrap: wrap;
+    order: 2;
+
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.main-header__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: flex-start;
+
+  margin-left: auto;
+  padding-top: 3.072vw;
+
+  @media (max-width: $screen-md) {
+    flex-direction: column;
+
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    min-height: 100vh;
+
+    background-color: $purple;
+  }
+}
+
+.js .main-header__wrap {
+  @media (max-width: $screen-md) {
+    position: absolute;
+    left: -100vw;
+  }
+}
+
+.js .main-header--open .main-header__wrap {
+  @media (max-width: $screen-md) {
+    transform: translateX(100vw);
+  }
+}

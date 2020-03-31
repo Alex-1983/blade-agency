@@ -1,0 +1,136 @@
+.info-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: $screen-md) {
+    flex-direction: column;
+
+    width: 34.895vw;
+  }
+
+  @media (max-width: $screen-sm) {
+    width: auto;
+  }
+}
+
+.info-list__item {
+  position: relative;
+
+  padding-right: 2.3vw;
+  padding-bottom: 0.2vw;
+  padding-left: 5.5vw;
+
+  border-right: 0.052vw solid rgba(255, 255, 255, 0.4);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 2.5vw;
+
+    width: 2.291vw;
+    height: 2.291vw;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (max-width: $screen-md) {
+      left: 0;
+
+      width: 44px;
+      height: 44px;
+    }
+  }
+
+  @media (max-width: $screen-md) {
+    margin-bottom: 41px;
+    padding-bottom: 0;
+
+    border: none;
+  }
+
+  @media (max-width: $screen-sm) {
+    margin-bottom: 25px;
+  }
+
+  &--data {
+    padding-right: 1.8vw;
+    padding-left: 2.864vw;
+
+    &::before {
+      left: 0;
+
+      background-image: url("../img/icon-calendar.svg");
+    }
+
+    @media (max-width: $screen-md) {
+      padding-right: 0;
+      padding-left: 58px;
+    }
+  }
+
+  &--location {
+    &::before {
+      background-image: url("../img/icon-location.svg");
+    }
+
+    @media (max-width: $screen-md) {
+      padding-right: 0;
+      padding-left: 58px;
+    }
+  }
+
+  &--present {
+    &::before {
+      background-image: url("../img/icon-present.svg");
+    }
+
+    @media (max-width: $screen-md) {
+      padding-right: 0;
+      padding-left: 58px;
+    }
+  }
+
+  &:last-child {
+    border: none;
+
+    @media (max-width: $screen-md) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.info-list__item time,
+.info-list__item p {
+  margin: 0;
+
+  font-size: 0.937vw;
+  line-height: 1.145vw;
+
+  opacity: 0.74;
+  color: $white;
+
+  @media (max-width: $screen-md) {
+    width: auto;
+
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.info-list__item time {
+  display: block;
+
+  width: 5.2vw;
+
+  @media (max-width: $screen-md) {
+    padding-right: 77px;
+    width: auto;
+
+    line-height: 18px;
+  }
+
+  @media (max-width: $screen-sm) {
+    padding-right: 100px;
+  }
+}

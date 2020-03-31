@@ -1,0 +1,75 @@
+<header class="main-header">
+  <div class="main-header__inner">
+    <div class="main-header__title">
+      <div class="main-header__logo">
+        <span class="visually-hidden">blade</span>
+        <img src="img/logo.svg" width="180" height="42" alt="Логотип blade">
+      </div>
+    </div>
+    <button class="burger main-header__toggler" aria-label="Показать главное меню">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="main-header__wrap">
+      <nav class="main-header__main-nav main-nav">
+        <ul class="list-reset main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--active">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Участники</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Жюри</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Билеты</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="main-header__language language-block">
+        <button class="btn language-block__title" type="button">рус</button>
+        <ul class="list-reset language-block__list">
+          <li class="language-block__item language-block__item--active">
+            <input class="visually-hidden" type="radio" name="lang" id="rus" value="рус" checked>
+            <label for="rus">рус</label>
+          </li>
+          <li class="language-block__item">
+            <input class="visually-hidden" type="radio" name="lang" id="en" value="англ">
+            <label for="en">англ</label>
+          </li>
+        </ul>
+      </div>
+      <ul class="list-reset main-header__social social">
+        <li>
+          <a class="social__link" target="_blank" title="Фейсбук" href="#">
+            <span class="visually-hidden">Мы в фейсбуке</span>
+            <svg width="44" height="44">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#fb"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="social__link" target="_blank" title="Инстаррам" href="#">
+            <span class="visually-hidden">Мы в инстаграмме</span>
+            <svg width="44" height="44">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#insta"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="social__link" target="_blank" title="Твитер" href="#">
+            <span class="visually-hidden">Мы в твитере</span>
+            <svg width="44" height="44">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#tw"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>

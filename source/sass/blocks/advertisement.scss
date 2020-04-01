@@ -39,7 +39,7 @@
 .advertisement__text-wrap {
   margin-bottom: 130px;
   padding-left: 5.416vw;
-  width: 53.4vw;
+  width: 53.7vw;
 
   @media (max-width: $screen-md) {
     padding-right: 23px;
@@ -55,6 +55,8 @@
 }
 
 .advertisement__text-wrap h1 {
+  position: relative;
+
   margin: 0;
   margin-bottom: 3.9vw;
   padding: 0;
@@ -212,11 +214,24 @@
   }
 }
 
-.advertisement__img-wrap {
+.advertisement__slider {
   position: absolute;
   right: 0;
   bottom: 0;
+}
 
+.advertisement__slider-container {
+  width: 43.697vw;
+  height: 47.1vw;
+
+  @media (max-width: $screen-md) {
+    width: 448px;
+    height: 560px;
+  }
+}
+
+.advertisement__img-wrap {
+  padding-top: 1.43vw;
   width: 43.697vw;
   height: 45.885vw;
 
@@ -227,14 +242,15 @@
   }
 
   &::before {
-    top: -1.4vw;
-    right: -1.302vw;
+    top: 0;
+    right: 0;
     z-index: 1;
 
-    width: 33.593vw;
+    width: 31.7vw;
     height: 45.729vw;
 
-    border: 0.52vw solid $yellow;
+    border: 0.52vw solid rgba(242, 192, 63, 1);
+    border-right: rgba(242, 192, 63, 0);
   }
 
   &::after {
@@ -250,16 +266,18 @@
   }
 
   @media (max-width: $screen-md) {
+    padding-top: 15px;
     width: 448px;
     height: 548px;
 
     &::before {
-      top: -16px;
+      top: 0;
 
-      width: 321px;
+      width: 304px;
       height: 545px;
 
-      border: 6.6px solid $yellow;
+      border: 6.6px solid rgba(242, 192, 63, 1);
+      border-right: rgba(242, 192, 63, 0);
     }
   }
 
@@ -284,10 +302,10 @@
 .advertisement__slider-toggles {
   position: absolute;
   right: 80px;
-  bottom: 2.5vw;
+  bottom: 2.1vw;
 
-  width: 42px;
-  min-height: 30px;
+  width: 2.187vw;
+  min-height: 1.56vw;
 
   @media (max-width: $screen-md) {
     right: 42px;

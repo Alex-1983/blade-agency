@@ -36,6 +36,11 @@
   &:focus {
     width: 0.99vw;
     height: 0.99vw;
+
+    @media (max-width: $screen-md) {
+      width: 18px;
+      height: 18px;
+    }
   }
 
   &--prev {

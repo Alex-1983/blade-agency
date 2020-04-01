@@ -61,8 +61,6 @@
 
     transition: background 0.3s ease;
 
-    background-color: $yellow;
-
     @media (max-width: $screen-md) {
       content: none;
     }
@@ -92,4 +90,16 @@
     padding-top: 26px;
     padding-bottom: 21px;
   }
+}
+
+
+.site-list:hover .site-list__link--active::after,
+.site-list__link::after {
+  background-color: rgba(242, 192, 63, 0);
+}
+
+.site-list__item:hover .site-list__link--active::after,
+.site-list__link--active::after,
+.site-list__link:hover::after {
+  background-color: rgba(242, 192, 63, 1);
 }

@@ -25,9 +25,9 @@
   transform: rotate(45deg);
 
   color: transparent;
-  border: 0.104vw solid rgb(255, 255, 255);
+  border: 0.104vw solid rgb(30, 30, 30);
   outline: none;
-  background-color: transparent;
+  background-color: rgba(30, 30, 30, 0);
 
   &[href]:hover,
   &[href]:focus {
@@ -38,8 +38,8 @@
   &--prev {
     order: 2;
 
-    border-bottom: rgba(255, 255, 255, 0);
-    border-left: rgba(255, 255, 255, 0);
+    border-bottom: rgba(30, 30, 30, 0);
+    border-left: rgba(30, 30, 30, 0);
 
     &[href]:hover,
     &[href]:focus {
@@ -49,13 +49,27 @@
   }
 
   &--next {
-    border-top: rgba(255, 255, 255, 0);
-    border-right: rgba(255, 255, 255, 0);
+    border-top: rgba(30, 30, 30, 0);
+    border-right: rgba(30, 30, 30, 0);
 
     &:hover,
     &:focus {
       border-bottom: 0.104vw solid rgb(245, 208, 111);
       border-left: 0.104vw solid rgb(245, 208, 111);
     }
+  }
+}
+
+.advertisement__sections-toggles .sections-toggles__link {
+  border: 0.104vw solid rgb(255, 255, 255);
+
+  &--prev {
+    border-bottom: rgba(255, 255, 255, 0);
+    border-left: rgba(255, 255, 255, 0);
+  }
+
+  &--next {
+    border-top: rgba(255, 255, 255, 0);
+    border-right: rgba(255, 255, 255, 0);
   }
 }

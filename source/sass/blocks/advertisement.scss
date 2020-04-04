@@ -217,23 +217,29 @@
 .advertisement__slider {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: -0.52vw;
+
+  @media (max-width: $screen-md) {
+    bottom: -3px;
+  }
 }
 
 .advertisement__slider-container {
   width: 43.697vw;
-  height: 47.1vw;
+  max-width: 43.697vw;
+  min-height: 47.1vw;
 
   @media (max-width: $screen-md) {
     width: 448px;
-    height: 560px;
+    max-width: 448px;
+    min-height: 560px;
   }
 }
 
 .advertisement__img-wrap {
   padding-top: 1.43vw;
   width: 43.697vw;
-  height: 45.885vw;
+  min-height: 45.885vw;
 
   &::before,
   &::after {
@@ -309,7 +315,7 @@
 
   @media (max-width: $screen-md) {
     right: 42px;
-    bottom: 20px;
+    bottom: 25px;
 
     width: 35px;
   }

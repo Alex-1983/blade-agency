@@ -1,5 +1,5 @@
 .toggles {
-  z-index: 5;
+  z-index: 4;
 
   display: flex;
   justify-content: space-between;
@@ -11,6 +11,7 @@
 }
 
 .toggles__btn {
+  position: absolute;
   margin: 0;
   padding: 0;
   width: 0.781vw;
@@ -44,6 +45,7 @@
   }
 
   &--prev {
+    left: 0;
     border-top: rgba(255, 255, 255, 0);
     border-right: rgba(255, 255, 255, 0);
 
@@ -55,6 +57,7 @@
   }
 
   &--next {
+    right: 0;
     border-bottom: rgba(255, 255, 255, 0);
     border-left: rgba(255, 255, 255, 0);
 

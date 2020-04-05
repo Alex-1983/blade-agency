@@ -24,11 +24,11 @@
   position: relative;
 
   margin: 0 auto;
-  padding: 15.885vw 2.083vw 1.6vw;
+  padding: 15.885vw 2.083vw 1.599vw;
   max-width: 1920px;
 
   @media (max-width: $screen-md) {
-    padding: 156px 24px 24px;
+    padding: 156px 24px 26px;
   }
 
   @media (max-width: $screen-sm) {
@@ -315,7 +315,7 @@
 
   @media (max-width: $screen-md) {
     right: 42px;
-    bottom: 25px;
+    bottom: 27px;
 
     width: 35px;
   }

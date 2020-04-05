@@ -1,6 +1,6 @@
 .main-content h2 {
   margin: 0;
-  margin-bottom: 2.083vw;
+  margin-bottom: 2vw;
   margin-left: 5.468vw;
   padding: 0;
 
@@ -16,7 +16,7 @@
   color: $h2-color;
 
   @media (max-width: $screen-md) {
-    margin-bottom: 65px;
+    margin-bottom: 67px;
     margin-left: 0;
 
     font-size: 56px;

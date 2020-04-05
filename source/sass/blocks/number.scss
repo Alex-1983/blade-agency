@@ -27,10 +27,12 @@
 
   &::before {
     left: 0;
+    width: 22.4vw;
   }
 
   &::after {
     right: 0;
+    width: 22.6vw;
   }
 
   @media (max-width: $screen-md) {

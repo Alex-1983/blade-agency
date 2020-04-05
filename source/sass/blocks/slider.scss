@@ -1,4 +1,48 @@
 .slider {
+  position: relative;
+
+  margin: 0 auto;
+  padding: 8.541vw 2.083vw 2.023vw;
+  max-width: 1920px;
+
+  @media (max-width: $screen-md) {
+    margin: 0;
+    padding: 105px 0 90px 48px;
+  }
+
+  @media (max-width: $screen-sm) {
+    padding-top: 66px;
+    padding-bottom: 30px;
+    padding-left: 0;
+  }
+
+  &--jury {
+    padding-top: 10.104vw;
+    padding-bottom: 3.523vw;
+
+    @media (max-width: $screen-md) {
+      margin: 0;
+      padding-top: 78px;
+      padding-right: 0;
+      padding-bottom: 162px;
+    }
+
+    @media (max-width: $screen-sm) {
+      padding-top: 28px;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+.slider--jury .number {
+  @media (max-width: $screen-md) {
+    bottom: 58px;
+  }
+}
+
+.slider__wrap {
+  position: relative;
+
   margin-right: auto;
   margin-left: auto;
   padding-right: 3.9vw;
@@ -10,6 +54,37 @@
     margin: 0;
     padding: 0;
     max-width: 1700px;
+  }
+
+  &::after {
+    @media (max-width: $screen-md) {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 1;
+
+      width: 80px;
+      height: 668px;
+
+      background: linear-gradient(270deg, rgba(255, 255, 255, 0.49) 0%, rgba(255, 255, 255, 0) 100%);
+    }
+
+    @media (max-width: $screen-sm) {
+      content: none;
+    }
+  }
+
+  &--jury {
+    max-width: 89.843vw;
+
+    @media (max-width: $screen-md) {
+      max-width: 1700px;
+    }
+
+    @media (max-width: $screen-sm) {
+      margin-bottom: 15px;
+    }
   }
 }
 
@@ -25,7 +100,7 @@
   }
 }
 
-.slider .swiper-container {
+.slider__wrap .swiper-container {
   min-height: 39vw;
 
   @media (max-width: $screen-md) {
@@ -37,9 +112,21 @@
   }
 }
 
+.slider__wrap--jury .swiper-container {
+  min-height: 35.937vw;
+
+  @media (max-width: $screen-md) {
+    min-height: 656px;
+  }
+
+  @media (max-width: $screen-sm) {
+    min-height: 484px;
+  }
+}
+
 .slider__btn {
   position: absolute;
-  bottom: 23.5vw;
+  bottom: 23.7vw;
 
   width: 2.333vw;
   height: 2.333vw;
@@ -53,7 +140,7 @@
   }
 
   &--prev {
-    left: 8vw;
+    left: 7.9vw;
   }
 
   &--next {
@@ -63,6 +150,10 @@
   @media (max-width: $screen-md) {
     display: none;
   }
+}
+
+.slider--jury .slider__btn {
+  bottom: 21.3vw;
 }
 
 .slider__pagination {
@@ -101,5 +192,11 @@
 
   &-active {
     opacity: 1;
+  }
+}
+
+.slider__pagination--jury {
+  @media (max-width: $screen-sm) {
+    padding-right: 24px;
   }
 }

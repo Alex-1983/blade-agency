@@ -1,0 +1,265 @@
+.contacts {
+  position: relative;
+
+  margin: 0 auto;
+  padding: 9.479vw 2.083vw 6.458vw;
+  max-width: 1920px;
+
+  @media (max-width: $screen-md) {
+    padding: 100px 63px 107px 48px;
+  }
+
+  @media (max-width: $screen-sm) {
+    padding: 0;
+    padding-bottom: 77px;
+  }
+}
+
+.contacts h2 {
+  @media (max-width: $screen-md) {
+    margin-bottom: 56px;
+
+    letter-spacing: 0.016em;
+  }
+
+  @media (max-width: $screen-sm) {
+    margin-bottom: 40px;
+    padding-right: 100px;
+  }
+}
+
+.contacts__inner {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 2.083vw;
+  padding-right: 10.677vw;
+  padding-left: 4.9vw;
+
+  @media (max-width: $screen-md) {
+    display: block;
+
+    padding: 0;
+  }
+}
+
+.contacts__info {
+  @media (max-width: $screen-md) {
+    margin-bottom: 41px;
+  }
+
+  @media (max-width: $screen-sm) {
+    margin-bottom: 18px;
+  }
+}
+
+.contacts__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-right: auto;
+  margin-bottom: 1.666vw;
+  margin-left: 0.568vw;
+
+  @media (max-width: $screen-md) {
+    margin-bottom: 26px;
+    margin-left: 5px;
+    width: 94%;
+  }
+
+  @media (max-width: $screen-sm) {
+    margin: 0;
+    padding-right: 16px;
+    padding-bottom: 38px;
+    padding-left: 16px;
+    width: 100%;
+  }
+}
+
+.contacts__map {
+  position: relative;
+
+  width: 43.020vw;
+  min-height: 24.947vw;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+    width: 42.187vw;
+    height: 24.061vw;
+
+    opacity: 0.54;
+    border: 0.208vw solid #f5d0f6;
+  }
+
+  @media (max-width: $screen-md) {
+    width: 100%;
+    min-height: 371px;
+
+    &::after {
+      left: 15px;
+
+      width: 100%;
+      height: 355px;
+
+      border-width: 4px;
+    }
+  }
+
+  @media (max-width: $screen-sm) {
+    &::after {
+      content: none;
+    }
+  }
+}
+
+.contacts__map-link img {
+  width: 42.187vw;
+  height: 24.062vw;
+
+  font-family: "object-fit: cover";
+
+  object-fit: cover;
+  object-position: center;
+
+  @media (max-width: $screen-md) {
+    width: 100%;
+    height: 355px;
+  }
+}
+
+.contacts__item {
+  margin-right: 4.062vw;
+  width: 7.916vw;
+
+  @media (max-width: $screen-md) {
+    margin-right: auto;
+    width: 157px;
+  }
+
+  @media (max-width: $screen-sm) {
+    margin-bottom: 40px;
+  }
+
+  &:nth-child(3n) {
+    margin-right: 0;
+
+    @media (max-width: $screen-sm) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.contacts__social {
+  display: flex;
+
+  padding-top: 0.26vw;
+
+  @media (max-width: $screen-md) {
+    padding-top: 0;
+  }
+}
+
+.contacts__item h3 {
+  margin: 0;
+  margin-bottom: 0.625vw;
+  padding: 0;
+
+  font-size: 0.729vw;
+  font-weight: 700;
+  line-height: 1.093vw;
+
+  letter-spacing: 0.104vw;
+  text-transform: uppercase;
+
+  opacity: 0.32;
+
+  @media (max-width: $screen-md) {
+    margin-bottom: 21px;
+
+    font-size: 14px;
+
+    letter-spacing: 2px;
+  }
+
+
+  @media (max-width: $screen-sm) {
+    margin-bottom: 25px;
+  }
+}
+
+.contacts__item p {
+  margin: 0;
+  padding: 0;
+  padding-top: 0.26vw;
+
+  font-size: 0.937vw;
+
+  @media (max-width: $screen-md) {
+    padding-top: 5px;
+
+    font-size: 18px;
+
+    letter-spacing: 0.3px;
+  }
+
+  @media (max-width: $screen-sm) {
+    padding: 0;
+  }
+}
+
+.contacts__item a {
+  margin: 0;
+  padding: 0;
+
+  font-size: 0.937vw;
+
+  color: $text-color;
+
+  @media (max-width: $screen-md) {
+    font-size: 18px;
+
+    letter-spacing: 0;
+  }
+}
+
+.contacts__link-mail a {
+  position: relative;
+
+  padding-bottom: 0.364vw;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 6.562vw;
+    height: 0.052vw;
+
+    background-image: url("../img/line-bottom.svg");
+    background-repeat: no-repeat;
+  }
+
+  @media (max-width: $screen-md) {
+    padding-top: 0;
+    padding-bottom: 4px;
+
+    &::after {
+      width: 130px;
+      height: 1px;
+    }
+  }
+}
+
+.contacts__feedback {
+  margin-left: auto;
+
+  @media (max-width: $screen-md) {
+    margin: 0;
+  }
+}

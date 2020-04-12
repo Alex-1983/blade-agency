@@ -1,0 +1,162 @@
+.feedback {
+  width: 30.885vw;
+
+  @media (max-width: $screen-md) {
+    width: 100%;
+  }
+}
+
+.feedback__wrap {
+  @media (max-width: $screen-md) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+
+    overflow-y: scroll;
+
+    padding: 156px 187px 291px 40px;
+    width: 100vw;
+    height: 100vh;
+
+    transform: translateX(-100vw);
+
+    background-color: $white;
+  }
+
+  @media (max-width: $screen-sm) {
+    padding: 112px 16px 113px;
+  }
+}
+
+.feedback__title {
+  margin-bottom: 2.447vw;
+
+  @media (max-width: $screen-md) {
+    margin-bottom: 24px;
+  }
+
+  @media (max-width: $screen-sm) {
+    margin-bottom: 27px;
+    margin-left: 16px;
+  }
+
+  &--form {
+    display: none;
+    @media (max-width: $screen-md) {
+      display: block;
+
+      margin-bottom: 46px;
+
+      letter-spacing: 0.2px;
+    }
+
+    @media (max-width: $screen-sm) {
+      margin-bottom: 40px;
+      margin-left: 0;
+    }
+  }
+}
+
+.feedback__title p {
+  margin: 0;
+  padding: 0;
+
+  font-size: 2.083vw;
+  line-height: 2.5vw;
+
+  @media (max-width: $screen-md) {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  @media (max-width: $screen-sm) {
+    font-size: 24px;
+  }
+}
+
+.feedback__title br {
+  display: none;
+
+  @media (max-width: $screen-sm) {
+    display: block;
+  }
+}
+
+
+.feedback__link {
+  display: none;
+
+  @media (max-width: $screen-md) {
+    display: inline-block;
+
+    padding-right: 82px;
+
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: 0;
+  }
+
+  @media (max-width: $screen-sm) {
+    margin-left: 16px;
+  }
+}
+
+.feedback__logo {
+  display: none;
+
+  @media (max-width: $screen-md) {
+    position: absolute;
+    top: 0;
+    left: 24px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 138px;
+    height: 92px;
+  }
+
+  @media (max-width: $screen-sm) {
+    left: 0;
+
+    width: 108px;
+    height: 72px;
+  }
+}
+
+.feedback__logo img {
+  @media (max-width: $screen-md) {
+    width: 103.41px;
+    height: 24.15px;
+  }
+
+  @media (max-width: $screen-sm) {
+    width: 80.93px;
+    height: 18.9px;
+  }
+}
+
+.feedback__close {
+  display: none;
+
+  @media (max-width: $screen-md) {
+    position: absolute;
+    top: 40px;
+    right: 49px;
+
+    display: block;
+  }
+
+  @media (max-width: $screen-sm) {
+    top: 22px;
+    right: 24px;
+  }
+}
+
+.js .feedback--open .feedback__wrap {
+  @media (max-width: $screen-md) {
+    transform: translateX(0);
+  }
+}

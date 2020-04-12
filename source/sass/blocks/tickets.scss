@@ -12,9 +12,8 @@
   }
 
   @media (max-width: $screen-sm) {
+    padding: 0;
     padding-top: 37px;
-    padding-right: 0;
-    padding-left: 0;
   }
 }
 
@@ -547,6 +546,7 @@
 
   font-size: 0.937vw;
   line-height: 1.145vw;
+  color: $text-color;
 
   text-align: center;
   letter-spacing: 0.08em;

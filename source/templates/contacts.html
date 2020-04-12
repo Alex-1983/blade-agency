@@ -1,0 +1,111 @@
+<section class="contacts">
+  <h2>Свяжитесь с нами</h2>
+  <div class="contacts__inner">
+    <div class="contacts__info">
+      <ul class="list-reset contacts__list">
+        <li class="contacts__item">
+          <h3>Офис продаж</h3>
+          <p>363561, Москва ул. Пушкина 17/1</p>
+        </li>
+        <li class="list-reset contacts__item">
+          <h3>Для связи</h3>
+          <a href="tel:89183650607">+7&nbsp;(924)&nbsp;456&nbsp;78&nbsp;90</a>
+          <div class="contacts__link-mail">
+            <a href="mailto:bfw@gmail.com">bfw@gmail.com</a>
+          </div>
+        </li>
+        <li class="contacts__item">
+          <h3>Подпишитесь</h3>
+          <ul class="list-reset contacts__social social">
+            <li class="social__item">
+              <a class="social__link" target="_blank" title="Фейсбук" href="#">
+                <span class="visually-hidden">Мы в фейсбуке</span>
+                <svg width="44" height="44">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" target="_blank" title="Инстаррам" href="#">
+                <span class="visually-hidden">Мы в инстаграмме</span>
+                <svg width="44" height="44">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#insta"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item social__item--tw">
+              <a class="social__link" target="_blank" title="Твитер" href="#">
+                <span class="visually-hidden">Мы в твитере</span>
+                <svg width="44" height="44">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#tw"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div class="contacts__map">
+        <a class="contacts__map-link" href="#">
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/img__map-sm.webp, img/img__map-sm.webp 2x">
+            <source type="image/webp" media="(max-width: 1040px)" srcset="img/img__map-md.webp, img/img__map-md.webp 2x">
+            <source type="image/webp" srcset="img/img__map-lg.webp, img/img__map-lg.webp 2x">
+            <source media="(max-width: 767px)" srcset="img/img__map-sm.jpg, img/img__map-sm.jpg 2x">
+            <source media="(max-width: 1040px)" srcset="img/img__map-md.jpg, img/img__map-md.jpg 2x">
+            <img src="img/img__map-lg.jpg" srcset="img/img__map-lg@2x.jpg 2x" width="810" height="462" alt="карта">
+          </picture>
+        </a>
+      </div>
+    </div>
+    <div class="contacts__feedback feedback feedback--open">
+      <div class="feedback__title">
+        <p>Остались вопросы?</p>
+        <p>Спросите нас!<br>Мы ответим!</p>
+      </div>
+      <div class="feedback__wrap">
+        <form class="feedback__form form" action="https://echo.htmlacademy.ru" method="POST">
+          <div class="feedback__logo">
+            <span class="visually-hidden">blade</span>
+            <img src="img/logo.svg" width="180" height="42" alt="Логотип blade">
+          </div>
+          <button class="feedback__close close" type="button" aria-label="Закрыть" title="Закрыть">
+            <span>Скрыть главное меню</span>
+          </button>
+          <div class="feedback__title feedback__title--form">
+            <p>Остались вопросы?</p>
+            <p>Спросите нас!<br>Мы ответим!</p>
+          </div>
+          <div class="form__item form__item--name">
+            <label for="name">Имя</label>
+            <input id="name" type="text" name="name" placeholder="Введите имя" pattern="^([A-Za-zА-Яа-яЁё]+\s?'?-?)+$" autocomplete="on" required>
+            <div class="form__warning">Недопустимое значение поля. Пожалуйста, повторите ввод.</div>
+          </div>
+          <div class="form__item form__item--email">
+            <label for="mail">Email</label>
+            <input id="mail" type="email" name="mail" placeholder="Введите e-mail" pattern="[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" autocomplete="on" required>
+            <div class="form__warning">Недопустимое значение поля. Пожалуйста, повторите ввод.</div>
+          </div>
+          <div class="form__item form__item--textarea">
+            <label for="textarea">Сообщение</label>
+            <textarea id="textarea" name="textarea" placeholder="Задайте любой вопрос" required></textarea>
+            <div class="form__warning">Недопустимое значение поля. Пожалуйста, повторите ввод.</div>
+          </div>
+          <button class="btn button form__btn" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+    <a class="link feedback__link" href="#">Задать вопрос</a>
+  </div>
+  <div class="number">
+    <div class="number__container">
+      <div class="number__count">
+        <span class="number__count-item">05</span>
+        <span class="number__count-item number__count-item--total">05</span>
+      </div>
+      <div class="sections-toggles">
+        <a class="sections-toggles__link sections-toggles__link--prev" href="#">Рекламное предложение</a>
+        <a class="sections-toggles__link sections-toggles__link--next" href="#" aria-label="Next block">Следующий блок</a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -24,7 +24,7 @@
   position: relative;
 
   margin: 0 auto;
-  padding: 15.885vw 2.083vw 1.599vw;
+  padding: 15.885vw 2.083vw 1.7522vw;
   max-width: 1920px;
 
   @media (max-width: $screen-md) {
@@ -156,7 +156,7 @@
   padding: 1.979vw 7.51vw 1.8vw 1.041vw;
   width: 21.2vw;
 
-  font-size: 0.937vw;
+  font-size: $font-size-vw;
   line-height: 1.145vw;
 
   text-align: center;
@@ -185,7 +185,7 @@
     padding: 24px 97px 22px 22px;
     width: 274px;
 
-    font-size: 18px;
+    font-size: $font-size;
     line-height: 22px;
 
     &::after {
@@ -274,7 +274,7 @@
   @media (max-width: $screen-md) {
     padding-top: 15px;
     width: 448px;
-    height: 548px;
+    height: 552px;
 
     &::before {
       top: 0;

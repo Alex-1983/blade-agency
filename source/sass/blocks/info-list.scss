@@ -104,7 +104,7 @@
 .info-list__item p {
   margin: 0;
 
-  font-size: 0.937vw;
+  font-size: $font-size-vw;
   line-height: 1.145vw;
 
   opacity: 0.74;
@@ -113,7 +113,7 @@
   @media (max-width: $screen-md) {
     width: auto;
 
-    font-size: 18px;
+    font-size: $font-size;
     line-height: 22px;
   }
 }

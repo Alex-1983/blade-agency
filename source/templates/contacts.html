@@ -1,4 +1,4 @@
-<section class="contacts">
+<section class="contacts" id="contacts">
   <h2>Свяжитесь с нами</h2>
   <div class="contacts__inner">
     <div class="contacts__info">
@@ -57,35 +57,35 @@
         </a>
       </div>
     </div>
-    <div class="contacts__feedback feedback feedback--open">
-      <div class="feedback__title">
+    <div class="contacts__feedback contacts-feedback">
+      <div class="contacts-feedback__title">
         <p>Остались вопросы?</p>
         <p>Спросите нас!<br>Мы ответим!</p>
       </div>
-      <div class="feedback__wrap">
-        <form class="feedback__form form" action="https://echo.htmlacademy.ru" method="POST">
-          <div class="feedback__logo">
-            <span class="visually-hidden">blade</span>
-            <img src="img/logo.svg" width="180" height="42" alt="Логотип blade">
-          </div>
-          <button class="feedback__close close" type="button" aria-label="Закрыть" title="Закрыть">
-            <span>Скрыть главное меню</span>
-          </button>
-          <div class="feedback__title feedback__title--form">
-            <p>Остались вопросы?</p>
-            <p>Спросите нас!<br>Мы ответим!</p>
-          </div>
-          <div class="form__item form__item--name">
-            <label for="name">Имя</label>
-            <input id="name" type="text" name="name" placeholder="Введите имя" pattern="^([A-Za-zА-Яа-яЁё]+\s?'?-?)+$" autocomplete="on" required>
+      <div class="contacts-feedback__wrap">
+        <div class="contacts-feedback__logo logo">
+          <span class="visually-hidden">blade</span>
+          <img src="img/logo.svg" width="180" height="42" alt="Логотип blade">
+        </div>
+        <button class="contacts-feedback__close close" type="button" aria-label="Закрыть" title="Закрыть">
+          <span>Скрыть главное меню</span>
+        </button>
+        <div class="contacts-feedback__title contacts-feedback__title--form">
+          <p>Остались вопросы?</p>
+          <p>Спросите нас!<br>Мы ответим!</p>
+        </div>
+        <form class="contacts-feedback__form form" action="https://echo.htmlacademy.ru" method="POST">
+          <div class="form__item">
+            <label for="contacts-name">Имя</label>
+            <input id="contacts-name" type="text" name="name" placeholder="Введите имя" pattern="^([A-Za-zА-Яа-яЁё]+\s?'?-?)+$" autocomplete="on" required>
             <div class="form__warning">Недопустимое значение поля. Пожалуйста, повторите ввод.</div>
           </div>
-          <div class="form__item form__item--email">
-            <label for="mail">Email</label>
-            <input id="mail" type="email" name="mail" placeholder="Введите e-mail" pattern="[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" autocomplete="on" required>
+          <div class="form__item">
+            <label for="contacts-email">Email</label>
+            <input id="contacts-email" type="email" name="mail" placeholder="Введите e-mail" pattern="[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" autocomplete="on" required>
             <div class="form__warning">Недопустимое значение поля. Пожалуйста, повторите ввод.</div>
           </div>
-          <div class="form__item form__item--textarea">
+          <div class="form__item">
             <label for="textarea">Сообщение</label>
             <textarea id="textarea" name="textarea" placeholder="Задайте любой вопрос" required></textarea>
             <div class="form__warning">Недопустимое значение поля. Пожалуйста, повторите ввод.</div>
@@ -94,18 +94,30 @@
         </form>
       </div>
     </div>
-    <a class="link feedback__link" href="#">Задать вопрос</a>
+    <div class="popup popup-contacts">
+      <div class="popup__logo logo">
+        <span class="visually-hidden">blade</span>
+        <img src="img/logo.svg" width="180" height="42" alt="Логотип blade">
+      </div>
+      <button class="popup__close close" type="button" aria-label="Закрыть" title="Закрыть">
+        <span>Скрыть главное меню</span>
+      </button>
+      <div class="popup__icon"></div>
+      <p>Спасибо за ваш вопрос! Ваша заявка в работе. Мы ответим в течение дня обязательно, будьте на связи!</p>
+      <button class="btn button popup__btn">Понятно</button>
+    </div>
+    <a class="link contacts-feedback__link" href="#">Задать вопрос</a>
   </div>
   <div class="number">
-    <div class="number__container">
-      <div class="number__count">
-        <span class="number__count-item">05</span>
-        <span class="number__count-item number__count-item--total">05</span>
-      </div>
-      <div class="sections-toggles">
-        <a class="sections-toggles__link sections-toggles__link--prev" href="#">Рекламное предложение</a>
-        <a class="sections-toggles__link sections-toggles__link--next" href="#" aria-label="Next block">Следующий блок</a>
-      </div>
+  <div class="number__container">
+    <div class="number__count">
+      <span class="number__count-item">05</span>
+      <span class="number__count-item number__count-item--total">05</span>
+    </div>
+    <div class="sections-toggles">
+      <a class="sections-toggles__link sections-toggles__link--prev" href="#tickets">Предыдущий блок</a>
+      <a class="sections-toggles__link sections-toggles__link--next">Следующий блок</a>
     </div>
   </div>
+</div>
 </section>

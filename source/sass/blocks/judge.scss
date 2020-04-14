@@ -172,10 +172,8 @@
   padding: 0;
   padding-right: 1.302vw;
 
-  font-size: 0.937vw;
+  font-size: $font-size-vw;
   font-weight: 400;
-  line-height: 1.5;
-
   letter-spacing: 0.001vw;
 
   opacity: 0.64;
@@ -183,7 +181,7 @@
   @media (max-width: $screen-md) {
     padding: 0;
 
-    font-size: 18px;
+    font-size: $font-size;
     line-height: 1.4;
   }
 }

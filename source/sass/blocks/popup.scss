@@ -1,0 +1,164 @@
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+
+  display: none;
+
+  padding: 2.552vw 6.354vw 2.604vw 2.083vw;
+  width: 45.833vw;
+
+  transform: translate(-50%, -50%);
+
+  outline: 1px solid red;
+  background-color: $white;
+
+  @media (max-width: $screen-md) {
+    top: 0;
+    left: 0;
+
+    overflow-y: scroll;
+
+    padding: 155px 122px 520px 40px;
+    width: 100vw;
+    height: 100vh;
+
+    transform: translateX(-100vw);
+  }
+
+  @media (max-width: $screen-sm) {
+    padding: 110px 20px 327px 16px;
+  }
+}
+
+.popup__icon {
+  position: relative;
+  top: 0;
+  left: 0;
+
+  margin-bottom: 1.666vw;
+  width: 3.333vw;
+  height: 3.333vw;
+
+  border-radius: 50%;
+  background-color: $purple;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 1.406vw;
+    left: 1.197vw;
+
+    width: 1.77vw;
+    height: 0.937vw;
+
+    transform: rotate(-45deg) translateY(-50%);
+
+    border-bottom: 0.416vw solid $white;
+    border-left: 0.416vw solid $white;
+  }
+
+  @media (max-width: $screen-md) {
+    margin-bottom: 32px;
+
+    width: 64px;
+    height: 64px;
+
+    &::before {
+      top: 27px;
+      left: 23px;
+
+      width: 34px;
+      height: 18px;
+
+      border-width: 8px;
+    }
+  }
+
+  @media (max-width: $screen-sm) {
+    margin-bottom: 35px;
+  }
+}
+
+.popup__logo {
+  display: none;
+
+  @media (max-width: $screen-md) {
+    position: absolute;
+    top: 0;
+    left: 24px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: $screen-sm) {
+    left: 0;
+  }
+}
+
+.popup p {
+  margin: 0;
+  margin-bottom: 2.604vw;
+  padding: 0;
+
+  font-size: 2.083vw;
+  line-height: 2.5vw;
+
+  letter-spacing: 0.01vw;
+
+  @media (max-width: $screen-md) {
+    margin-bottom: 50px;
+
+    font-size: 32px;
+    line-height: 1.2;
+    letter-spacing: 0.2px;
+  }
+
+  @media (max-width: $screen-sm) {
+    margin-bottom: 37px;
+
+    font-size: 24px;
+    line-height: 1.21;
+  }
+}
+
+.popup br {
+  @media (max-width: $screen-sm) {
+    display: none;
+  }
+}
+
+.popup__btn {
+  width: 10.5vw;
+
+  @media (max-width: $screen-md) {
+    width: 200px;
+  }
+}
+
+.popup__close {
+  position: absolute;
+  top: 2.5vw;
+  right: 2.5vw;
+
+  @media (max-width: $screen-md) {
+    top: 40px;
+    right: 48px;
+  }
+
+  @media (max-width: $screen-sm) {
+    top: 20px;
+    right: 25px;
+  }
+}
+
+.js .popup-tickets--open .popup-tickets {
+  display: block;
+
+  @media (max-width: $screen-md) {
+    transform: translateX(0);
+  }
+}

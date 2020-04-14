@@ -7,17 +7,17 @@
 }
 
 .form__item {
-  margin-bottom: 0.416vw;
+  margin-bottom: 0.6vw;
 
   @media (max-width: $screen-md) {
-    margin-bottom: 22px;
+    margin-bottom: 23px;
   }
 
   @media (max-width: $screen-sm) {
-    margin-bottom: 3px;
+    margin-bottom: 9px;
   }
 
-  &:nth-child(3n) {
+  &:nth-child(3) {
     @media (max-width: $screen-sm) {
       margin-bottom: 0;
     }
@@ -73,7 +73,7 @@
   padding: 0;
   padding-top: 0.364vw;
   width: 100%;
-  height: 92px;
+  height: 100px;
 
   font-family: $font-family;
 
@@ -81,19 +81,19 @@
   border-bottom: 1px solid rgba(30, 30, 30, 0.5);
 
   @media (max-width: $screen-md) {
-    padding-top: 0;
+    padding-top: 5px;
   }
 }
 
 .form__item input::placeholder,
 .form__item textarea::placeholder {
-  font-size: 0.937vw;
+  font-size: $font-size-vw;
   line-height: 1.5;
 
   color: rgba(30, 30, 30, 0.5);
 
   @media (max-width: $screen-md) {
-    font-size: 18px;
+    font-size: $font-size;
   }
 }
 
@@ -104,7 +104,7 @@
 }
 
 .form__item-error input {
-  border-color: #f00;
+  border-color: #f00000;
   outline: none;
 }
 
@@ -112,7 +112,7 @@
   padding-top: 0.52vw;
 
   font-size: 0.677vw;
-  line-height: 1.5;
+  line-height: 1.2;
 
   color: rgba(255, 0, 0, 0);
 

@@ -1,4 +1,4 @@
-<section class="tickets">
+<section class="tickets" id="tickets">
   <h2>Билеты</h2>
   <div class="tickets__inner">
     <div class="tickets__text-block">
@@ -131,15 +131,69 @@
     </table>
   </div>
   <div class="number">
-    <div class="number__container">
-      <div class="number__count">
-        <span class="number__count-item">04</span>
-        <span class="number__count-item number__count-item--total">05</span>
-      </div>
-      <div class="sections-toggles">
-        <a class="sections-toggles__link sections-toggles__link--prev" href="#">Рекламное предложение</a>
-        <a class="sections-toggles__link sections-toggles__link--next" href="#" aria-label="Next block">Следующий блок</a>
-      </div>
+  <div class="number__container">
+    <div class="number__count">
+      <span class="number__count-item">04</span>
+      <span class="number__count-item number__count-item--total">05</span>
     </div>
+    <div class="sections-toggles">
+      <a class="sections-toggles__link sections-toggles__link--prev" href="#jury">Предыдущий блок</a>
+      <a class="sections-toggles__link sections-toggles__link--next" href="#contacts">Следующий блок</a>
+    </div>
+  </div>
+</div>
+  <div class="tickets__feedback tickets-feedback">
+    <div class="tickets-feedback__logo logo">
+      <span class="visually-hidden">blade</span>
+      <img src="img/logo.svg" width="180" height="42" alt="Логотип blade">
+    </div>
+    <button class="tickets-feedback__close close" type="button" aria-label="Закрыть" title="Закрыть">
+      <span>Скрыть главное меню</span>
+    </button>
+    <div class="tickets-feedback__title">
+      <p>Чтобы приобрести билет, заполните форму ниже. Мы свяжемся с вами<br>по вопросу оплаты.</p>
+    </div>
+    <form class="tickets-feedback__form form" action="https://echo.htmlacademy.ru" method="POST">
+      <div class="form__item tickets-feedback__item">
+        <label for="name">Имя</label>
+        <input id="name" type="text" name="name" placeholder="Введите имя" pattern="^([A-Za-zА-Яа-яЁё]+\s?'?-?)+$" autocomplete="on" required>
+        <div class="form__warning">Недопустимое значение поля. Пожалуйста, повторите ввод.</div>
+      </div>
+      <div class="form__item tickets-feedback__item">
+        <label for="mail">Email</label>
+        <input id="mail" type="email" name="mail" placeholder="Введите e-mail" pattern="[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" autocomplete="on" required>
+        <div class="form__warning">Недопустимое значение поля. Пожалуйста, повторите ввод.</div>
+      </div>
+      <div class="radio__wrap radio">
+        <p>Статус билета</p>
+        <div class="radio__inner">
+          <div class="radio__item">
+            <input id="viewer" type="radio" name="radio">
+            <label for="viewer">Зритель</label>
+          </div>
+          <div class="radio__item">
+            <input id="optimum" type="radio" name="radio">
+            <label for="optimum">Оптимум</label>
+          </div>
+          <div class="radio__item radio__item--vip">
+            <input id="vip" type="radio" name="radio" checked>
+            <label for="vip">Vip</label>
+          </div>
+        </div>
+      </div>
+      <button class="btn link tickets-feedback__btn" type="submit">Бронь билета</button>
+    </form>
+  </div>
+  <div class="popup popup-tickets">
+    <div class="popup__logo logo">
+      <span class="visually-hidden">blade</span>
+      <img src="img/logo.svg" width="180" height="42" alt="Логотип blade">
+    </div>
+    <button class="popup__close close" type="button" aria-label="Закрыть" title="Закрыть">
+      <span>Скрыть главное меню</span>
+    </button>
+    <div class="popup__icon"></div>
+    <p>Спасибо за интерес к&nbsp;Blade Fashion Week 2019! Мы уже готовим ваше персональное приглашение.<br>Скоро сообщим о всех деталях.</p>
+    <button class="btn button popup__btn">Понятно</button>
   </div>
 </section>

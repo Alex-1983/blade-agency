@@ -2,11 +2,11 @@
   position: relative;
 
   margin: 0 auto;
-  padding: 9.479vw 2.083vw 6.458vw;
+  padding: 9.8vw 2.083vw 6.434vw;
   max-width: 1920px;
 
   @media (max-width: $screen-md) {
-    padding: 100px 63px 107px 48px;
+    padding: 110px 63px 107px 48px;
   }
 
   @media (max-width: $screen-sm) {
@@ -44,8 +44,10 @@
 }
 
 .contacts__info {
+  width: 43.019vw;
   @media (max-width: $screen-md) {
     margin-bottom: 41px;
+    width: auto;
   }
 
   @media (max-width: $screen-sm) {
@@ -79,7 +81,7 @@
 .contacts__map {
   position: relative;
 
-  width: 43.020vw;
+  width: 43.02vw;
   min-height: 24.947vw;
 
   &::after {
@@ -121,7 +123,7 @@
   width: 42.187vw;
   height: 24.062vw;
 
-  font-family: "object-fit: cover";
+  font-family: "object-fit: cover"; /*stylelint-disable*/
 
   object-fit: cover;
   object-position: center;
@@ -133,12 +135,16 @@
 }
 
 .contacts__item {
+  flex: 0 0 7.916vw;
+
   margin-right: 4.062vw;
-  width: 7.916vw;
+  max-width: 7.916vw;
 
   @media (max-width: $screen-md) {
+    flex: 0 0 157px;
+
     margin-right: auto;
-    width: 157px;
+    max-width: 157px;
   }
 
   @media (max-width: $screen-sm) {
@@ -197,12 +203,12 @@
   padding: 0;
   padding-top: 0.26vw;
 
-  font-size: 0.937vw;
+  font-size: $font-size-vw;
 
   @media (max-width: $screen-md) {
     padding-top: 5px;
 
-    font-size: 18px;
+    font-size: $font-size;
 
     letter-spacing: 0.3px;
   }
@@ -216,12 +222,12 @@
   margin: 0;
   padding: 0;
 
-  font-size: 0.937vw;
+  font-size: $font-size-vw;
 
   color: $text-color;
 
   @media (max-width: $screen-md) {
-    font-size: 18px;
+    font-size: $font-size;
 
     letter-spacing: 0;
   }
@@ -261,5 +267,27 @@
 
   @media (max-width: $screen-md) {
     margin: 0;
+  }
+}
+
+.contacts-feedback__form {
+  width: 28.125vw;
+}
+
+.contacts-feedback__link {
+  display: none;
+
+  @media (max-width: $screen-md) {
+    display: inline-block;
+
+    vertical-align: top;
+  }
+}
+
+.js .popup-contacts--open .popup-contacts {
+  display: block;
+
+  @media (max-width: $screen-md) {
+    transform: translateX(0);
   }
 }

@@ -7,7 +7,7 @@
 
   @media (max-width: $screen-md) {
     margin: 0;
-    padding: 105px 0 90px 48px;
+    padding: 107px 0 121px 49px;
   }
 
   @media (max-width: $screen-sm) {
@@ -17,26 +17,20 @@
   }
 
   &--jury {
-    padding-top: 10.104vw;
-    padding-bottom: 3.523vw;
+    padding-top: 9.91vw;
+    padding-bottom: 3.717vw;
 
     @media (max-width: $screen-md) {
       margin: 0;
-      padding-top: 78px;
+      padding-top: 108px;
       padding-right: 0;
-      padding-bottom: 162px;
+      padding-bottom: 88px;
     }
 
     @media (max-width: $screen-sm) {
       padding-top: 28px;
       padding-bottom: 20px;
     }
-  }
-}
-
-.slider--jury .number {
-  @media (max-width: $screen-md) {
-    bottom: 58px;
   }
 }
 
@@ -76,6 +70,7 @@
   }
 
   &--jury {
+    width: 100%;
     max-width: 89.843vw;
 
     @media (max-width: $screen-md) {
@@ -89,9 +84,11 @@
 }
 
 .slider__item {
+  margin-right: 2.5vw;
   width: 23.333vw;
 
   @media (max-width: $screen-md) {
+    margin-right: 0;
     width: 479px;
   }
 
@@ -104,7 +101,7 @@
   min-height: 39vw;
 
   @media (max-width: $screen-md) {
-    min-height: 700px;
+    min-height: 656px;
   }
 
   @media (max-width: $screen-sm) {
@@ -116,7 +113,7 @@
   min-height: 35.937vw;
 
   @media (max-width: $screen-md) {
-    min-height: 656px;
+    min-height: 700px;
   }
 
   @media (max-width: $screen-sm) {

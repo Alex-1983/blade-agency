@@ -1,0 +1,128 @@
+.tickets-feedback {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+
+  display: none;
+
+  padding: 2.5vw 7.864vw 2.5vw 2.083vw;
+  width: 45.833vw;
+
+  transform: translate(-50%, -50%);
+
+  outline: 1px solid red;
+  background-color: $white;
+
+  @media (max-width: $screen-md) {
+    top: 0;
+    left: 0;
+
+    overflow-y: scroll;
+
+    padding: 156px 174px 285px 40px;
+    width: 100vw;
+    height: 100vh;
+
+    transform: translateX(-100vw);
+  }
+
+  @media (max-width: $screen-sm) {
+    padding: 112px 16px 43px;
+  }
+}
+
+.tickets-feedback__logo {
+  display: none;
+
+  @media (max-width: $screen-md) {
+    position: absolute;
+    top: 0;
+    left: 24px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: $screen-sm) {
+    left: 0;
+  }
+}
+
+.tickets-feedback__title {
+  margin-bottom: 0.937vw;
+
+  @media (max-width: $screen-md) {
+    margin-bottom: 47px;
+  }
+
+  @media (max-width: $screen-sm) {
+    margin-bottom: 42px;
+  }
+}
+
+.tickets-feedback__title p {
+  margin: 0;
+  padding: 0;
+
+  font-size: 2.083vw;
+  line-height: 2.5vw;
+
+  letter-spacing: 0.026vw;
+
+  @media (max-width: $screen-md) {
+    font-size: 32px;
+    line-height: 1.2;
+
+    letter-spacing: 0.5px;
+  }
+
+  @media (max-width: $screen-sm) {
+    font-size: 24px;
+
+    letter-spacing: 0.3px;
+  }
+}
+
+.tickets-feedback__item {
+  margin-bottom: 0.833vw;
+
+  @media (max-width: $screen-md) {
+    margin-bottom: 28px;
+  }
+
+  @media (max-width: $screen-sm) {
+    margin-bottom: 0;
+  }
+}
+
+.tickets-feedback__close {
+  position: absolute;
+  top: 2.447vw;
+  right: 2.604vw;
+
+  @media (max-width: $screen-md) {
+    top: 40px;
+    right: 50px;
+  }
+
+  @media (max-width: $screen-sm) {
+    top: 20px;
+    right: 23px;
+  }
+}
+
+.tickets-feedback__btn {
+  @media (max-width: $screen-md) {
+    letter-spacing: -0.4px;
+  }
+}
+
+.js .tickets-feedback--open .tickets-feedback {
+  display: block;
+
+  @media (max-width: $screen-md) {
+    transform: translateX(0);
+  }
+}

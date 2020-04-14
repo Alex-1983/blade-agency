@@ -4,11 +4,11 @@
   overflow: hidden;
 
   margin: 0 auto;
-  padding: 9.1vw 2.083vw 15vw;
+  padding: 9.6vw 2.083vw 15.1742vw;
   max-width: 1920px;
 
   @media (max-width: $screen-md) {
-    padding: 106px 15px 80px;
+    padding: 108px 15px 80px;
   }
 
   @media (max-width: $screen-sm) {
@@ -18,8 +18,8 @@
 }
 
 .tickets h2 {
-  margin-top: 0.5vw;
-  margin-bottom: 1.9vw;
+  margin-top: 0.2vw;
+  margin-bottom: 1.8vw;
 
   @media (max-width: $screen-md) {
     margin-top: 0;
@@ -31,8 +31,8 @@
 
   @media (max-width: $screen-sm) {
     margin: 0;
-    margin-left: 15px;
     margin-bottom: 30px;
+    margin-left: 15px;
   }
 }
 
@@ -51,18 +51,13 @@
 }
 
 .tickets__text-block {
-  flex: 0 0 24.739vw;
-
-  padding-top: 2.239vw;
-  max-width: 24.739vw;
+  width: 24.739vw;
 
   @media (max-width: $screen-md) {
-    flex: 0 0 100%;
-
     margin-bottom: 40px;
     margin-left: 33px;
     padding-top: 17px;
-    max-width: 100%;
+    width: auto;
   }
 
   @media (max-width: $screen-sm) {
@@ -96,7 +91,6 @@
 
     @media (max-width: $screen-sm) {
       width: 95%;
-
     }
   }
 }
@@ -193,6 +187,7 @@
 
     @media (max-width: $screen-sm) {
       width: 54px;
+
       img {
         margin-left: 7px;
       }
@@ -238,7 +233,7 @@
   margin-bottom: 1.822vw;
   padding: 0;
 
-  font-size: 0.937vw;
+  font-size: $font-size-vw;
   line-height: $line-height;
 
   letter-spacing: 0.01vw;
@@ -360,6 +355,7 @@
 
   &--vip {
     margin-right: 1.562vw;
+
     @media (max-width: $screen-md) {
       margin-right: 32px;
     }
@@ -408,7 +404,7 @@
 
 .tickets td {
   margin: 0;
-  padding: 0.833vw 0.520vw 0.99vw 1.562vw;
+  padding: 0.833vw 0.52vw 0.99vw 1.562vw;
 
   font-size: 0.833vw;
   line-height: 0.989vw;
@@ -544,14 +540,14 @@
   padding: 0.781vw 1.041vw;
   width: 10vw;
 
-  font-size: 0.937vw;
+  font-size: $font-size-vw;
   line-height: 1.145vw;
-  color: $text-color;
 
   text-align: center;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 
+  color: $text-color;
   border: 0.052vw solid #d0d7dd;
   border-radius: 0.156vw;
   background-color: transparent;
@@ -560,15 +556,12 @@
     padding: 12px 15px;
     width: 120px;
 
-    font-size: 18px;
+    font-size: $font-size;
     line-height: 22px;
 
     letter-spacing: 0;
 
     border-width: 1px;
-  }
-
-  @media (max-width: $screen-sm) {
   }
 
   &--purple {

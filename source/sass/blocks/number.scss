@@ -1,45 +1,45 @@
 .number {
   position: absolute;
-  bottom: -1.302vw;
+  bottom: 0;
   left: 1.458vw;
 
   display: flex;
 
-  width: 100%;
-  height: 1.354vw;
-
-  transform: rotate(-90deg);
-  transform-origin: top left;
+  width: 1.354vw;
+  height: 100%;
 
   &::before,
   &::after {
     content: "";
+    position: absolute;
+    left: 0.572vw;
 
     display: block;
 
-    margin-top: 0.625vw;
-    width: 22.5vw;
-    height: 1px;
+    width: 0.052vw;
 
-    opacity: 0.5;
     background-color: $text-color;
+    background-color: #303030;
   }
 
   &::before {
-    left: 0;
-    width: 22.4vw;
+    top: 0;
+
+    height: 40%;
   }
 
   &::after {
-    right: 0;
-    width: 22.6vw;
+    bottom: 0;
+
+    height: 40.5%;
   }
 
   @media (max-width: $screen-md) {
-    bottom: 30px;
-    left: 0;
+    width: 300px;
+    height: auto;
 
-    transform: rotate(0);
+    bottom: 0;
+    left: 0;
 
     &::before,
     &::after {
@@ -59,17 +59,27 @@
   }
 }
 
+
 .number__container {
+  position: absolute;
+  top: 55.1%;
+  left: 0;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  padding-right: 2.1vw;
-  padding-left: 2.6vw;
-  width: 11.041vw;
+  width: 6.406vw;
+  height: 1.822vw;
+
+  transform: rotate(-90deg) translateY(-5px);
+  transform-origin: left top;
 
   @media (max-width: $screen-md) {
     position: relative;
+   transform: none;
+
+    bottom: 30px;
 
     padding: 0;
     padding-left: 48px;
@@ -101,7 +111,7 @@
 .number__count {
   display: flex;
 
-  width: 4.062vw;
+  width: 3.125vw;
 
   @media (max-width: $screen-md) {
     width: 100px;
@@ -109,7 +119,7 @@
 }
 
 .number__count-item {
-  font-size: 0.937vw;
+  font-size: $font-size-vw;
   font-weight: 700;
   line-height: 1.145vw;
 
@@ -117,7 +127,7 @@
   color: $text-color;
 
   @media (max-width: $screen-md) {
-    font-size: 18px;
+    font-size: $font-size;
     line-height: 22px;
   }
 

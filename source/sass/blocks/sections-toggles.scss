@@ -1,6 +1,4 @@
 .sections-toggles {
-  z-index: 5;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,6 +31,8 @@
   &[href]:focus {
     width: 0.99vw;
     height: 0.99vw;
+
+    border-color: rgb(245, 208, 111);
   }
 
   &--prev {
@@ -52,8 +52,8 @@
     border-top: rgba(30, 30, 30, 0);
     border-right: rgba(30, 30, 30, 0);
 
-    &:hover,
-    &:focus {
+    &[href]:hover,
+    &[href]:focus {
       border-bottom: 0.104vw solid rgb(245, 208, 111);
       border-left: 0.104vw solid rgb(245, 208, 111);
     }

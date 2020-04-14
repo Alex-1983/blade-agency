@@ -1,0 +1,23 @@
+.button {
+  padding: 0.677vw 1.041vw;
+
+  font-size: $font-size-vw;
+  line-height: 1.145vw;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  border: 0.052vw solid #d0d7dd;
+  border-radius: 0.104vw;
+  background-color: transparent;
+
+  @media (max-width: $screen-md) {
+    padding: 13px 10px 14px;
+
+    font-size: $font-size;
+    line-height: 22px;
+
+    border-width: 1px;
+  }
+}

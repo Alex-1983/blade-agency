@@ -89,3 +89,22 @@
     }
   }
 }
+
+.main-header__wrap .social__item {
+  @media (max-width: $screen-md) {
+    margin-right: 12px;
+    margin-left: 12px;
+  }
+}
+
+.main-header__wrap .social__link {
+  @media (max-width: $screen-md) {
+    width: 44px;
+    height: 44px;
+
+    svg {
+      width: 44px;
+      height: 44px;
+    }
+  }
+}

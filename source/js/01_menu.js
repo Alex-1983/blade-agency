@@ -8,19 +8,32 @@
   var burger = header.querySelector(".burger");
   var advertisement = document.querySelector("#advertisement");
   var widthWindow = document.documentElement.clientWidth;
+  var nav = document.querySelector('.main-nav');
 
   if (!header || !burger || !body) {
     return;
   }
 
+  var bottomPositionaAvertisement = advertisement.getBoundingClientRect().bottom;
+
+  var getBottomPosition = function () {
+    var position = burger.getBoundingClientRect().bottom;
+    if (widthWindow > DESKTOP) {
+      position = nav.getBoundingClientRect().bottom;
+    }
+    return position;
+  };
+
+  var bottomPosition = getBottomPosition();
+
   var onScroll = function() {
     var bottomPositionaAvertisement = advertisement.getBoundingClientRect().bottom;
-
-    if (widthWindow >= TABLET) {
-      if (header.offsetTop > bottomPositionaAvertisement) {
-        header.classList.add('main-header--scroll');
+    bottomPosition = getBottomPosition();
+    if (widthWindow > TABLET) {
+      if (bottomPosition > bottomPositionaAvertisement) {
+        header.classList.add("main-header--scroll");
       } else {
-        header.classList.remove('main-header--scroll');
+        header.classList.remove("main-header--scroll");
       }
     }
   };
@@ -38,7 +51,7 @@
 
   var onClickHeader = function(evt) {
     var activeElement = evt.target;
-    if (activeElement.classList.contains("site-list__link")) {
+    if (activeElement.classList.contains("main-nav__link")) {
       header.classList.remove("main-header--open");
       burger.classList.remove("burger--close");
       body.classList.remove("no-scroll");

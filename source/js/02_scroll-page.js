@@ -37,10 +37,10 @@
     sectionPositon = getPosition(sections);
     if (activeBlock !== checkPosition(sectionPositon) && checkPosition(sectionPositon)) {
       activeBlock = checkPosition(sectionPositon);
-      var oldActiveLink = document.querySelector(".site-list__link--active");
+      var oldActiveLink = document.querySelector(".main-nav__link--active");
       var newActiveLink = document.querySelector("[href='#" + activeBlock + "']");
-      oldActiveLink.classList.remove("site-list__link--active");
-      newActiveLink.classList.add("site-list__link--active");
+      oldActiveLink.classList.remove("main-nav__link--active");
+      newActiveLink.classList.add("main-nav__link--active");
     }
   };
 

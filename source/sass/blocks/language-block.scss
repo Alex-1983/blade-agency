@@ -33,6 +33,10 @@
   }
 }
 
+.js .language-block__list {
+  display: none;
+}
+
 .language-block__title {
   position: relative;
 
@@ -79,6 +83,7 @@
 
   @media (max-width: $screen-md) {
     position: relative;
+
     padding: 0;
 
     input:checked + label {
@@ -92,23 +97,25 @@
     border-bottom: 0.052vw solid rgba(30, 30, 30, 0.1);
 
     @media (max-width: $screen-md) {
-      padding-bottom: 0;
       padding-right: 12px;
+      padding-bottom: 0;
 
       border-bottom: none;
 
       &::after {
         content: "/";
-        display: block;
         position: absolute;
         top: -1px;
         right: 4px;
 
+        display: block;
+
         font-size: 16px;
-        line-height: 19.2px;
         font-weight: 600;
-        color: $white;
+        line-height: 19.2px;
+
         opacity: 0.5;
+        color: $white;
       }
     }
   }
@@ -131,8 +138,8 @@
     font-weight: 600;
     line-height: 19.2px;
 
-    color: $white;
     opacity: 0.5;
+    color: $white;
   }
 
   &::before,
@@ -188,4 +195,14 @@
 
 .language-block__item label[for="en"]::before {
   background-image: url("../img/flag-en.svg");
+}
+
+.language-block--open .language-block__list {
+  display: block;
+}
+
+.language-block--open .language-block__title::after {
+  top: 0.7vw;
+
+  transform: rotate(-180deg);
 }

@@ -112,14 +112,12 @@
     font-size: 24px;
     font-weight: 600;
     line-height: 29px;
-
-    letter-spacing: 0.02em;
   }
 
   @media (max-width: $screen-sm) {
     margin-bottom: 12px;
 
-    font-size: 18px;
+    font-size: $font-size;
     line-height: 22px;
   }
 

@@ -6,7 +6,6 @@
 
   width: 100%;
 
-  transition: background 0.1s ease;
 
   background-color: $purple;
   background-repeat: no-repeat;
@@ -43,15 +42,51 @@
 }
 
 .main-header__title {
+  display: flex;
+
+  width: 26.822vw;
+
   @media (max-width: $screen-md) {
     position: absolute;
     top: 0;
     left: 24px;
     z-index: 1;
+
+    width: auto;
   }
 
   @media (max-width: $screen-sm) {
     left: 0;
+  }
+}
+
+.main-header__hashtag {
+  display: flex;
+
+  margin: 0;
+  margin-top: 4.01vw;
+  padding: 0;
+  width: 13vw;
+
+  font-size: 0.885vw;
+  font-weight: 700;
+  line-height: 1.041vw;
+
+  letter-spacing: 0.02em;
+
+  opacity: 0;
+  color: $yellow;
+
+  @media (max-width: $screen-md) {
+    margin-top: 42px;
+    width: 174px;
+
+    font-size: 17px;
+    line-height: 20px;
+  }
+
+  @media (max-width: $screen-sm) {
+    display: none;
   }
 }
 
@@ -108,9 +143,9 @@
 
     margin: 0;
     padding: 0;
+    padding-bottom: 100px;
     width: 100vw;
-    min-height: 100vh;
-
+    transition: transform 0.3s ease;
     background-color: $purple;
   }
 }
@@ -124,6 +159,24 @@
 
 .js .main-header--open .main-header__wrap {
   @media (max-width: $screen-md) {
+    min-height: 100vh;
+
     transform: translateX(100vw);
   }
+}
+
+.main-header--scroll {
+  background-color: $white;
+}
+
+.main-header--scroll .main-header__hashtag {
+  opacity: 0.87;
+}
+
+.js .main-header--scroll .burger > span {
+  background-color: $purple;
+}
+
+.js .main-header--scroll .burger--close > span {
+  background-color: rgba(121, 101, 173, 0);
 }

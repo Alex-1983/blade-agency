@@ -84,11 +84,11 @@
   }
 
   @media (max-width: $screen-sm) {
-    font-weight: 700;
-    font-size: 32px;
-
     padding-top: 26px;
     padding-bottom: 21px;
+
+    font-size: 32px;
+    font-weight: 700;
   }
 }
 
@@ -102,4 +102,12 @@
 .site-list__link--active::after,
 .site-list__link:hover::after {
   background-color: rgba(242, 192, 63, 1);
+}
+
+.main-header--scroll .site-list__link {
+  color: $text-color;
+
+  @media (max-width: $screen-md) {
+    color: $white;
+  }
 }

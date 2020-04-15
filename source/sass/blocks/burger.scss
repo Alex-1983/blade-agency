@@ -38,7 +38,6 @@
       height: 3px;
 
       transform: translateY(-50%);
-      transition: background 0.3s 0.3s;
       vertical-align: middle;
 
       border-radius: 3px;
@@ -48,7 +47,6 @@
       &:last-child {
         width: 100%;
 
-        transition: top 0.3s 0.3s, transform 0.3s;
         transform-origin: 50% 50%;
       }
 
@@ -70,8 +68,10 @@
         &:first-child,
         &:last-child {
           top: 11px;
-          background-color: $white;
+
           transition: top 0.3s, transform 0.3s 0.3s;
+
+          background-color: $white;
         }
 
         &:first-child {

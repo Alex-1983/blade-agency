@@ -130,10 +130,8 @@
   @media (max-width: $screen-md) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     order: 2;
-
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 

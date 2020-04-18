@@ -226,11 +226,16 @@
   font-size: $font-size-vw;
 
   color: $text-color;
+  transition: color 0.3s ease;
 
   @media (max-width: $screen-md) {
     font-size: $font-size;
 
     letter-spacing: 0;
+  }
+
+  &:hover {
+    color: #0c4ffc;
   }
 }
 
@@ -260,6 +265,10 @@
       width: 130px;
       height: 1px;
     }
+  }
+
+  &:hover::after {
+    content: none;
   }
 }
 

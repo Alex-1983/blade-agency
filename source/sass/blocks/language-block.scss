@@ -206,3 +206,11 @@
 
   transform: rotate(-180deg);
 }
+
+.main-header--scroll .language-block__title {
+  color: $text-color;
+
+  &::after {
+    border-color: $text-color transparent transparent transparent;
+  }
+}

@@ -2,7 +2,7 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  z-index: 5;
+  z-index: 11;
 
   display: none;
 
@@ -11,10 +11,10 @@
 
   transform: translate(-50%, -50%);
 
-  outline: 1px solid red;
   background-color: $white;
 
   @media (max-width: $screen-md) {
+    display: block;
     top: 0;
     left: 0;
 
@@ -25,6 +25,7 @@
     height: 100vh;
 
     transform: translateX(-100vw);
+    transition: transform 0.3s ease;
   }
 
   @media (max-width: $screen-sm) {
@@ -113,7 +114,7 @@
   }
 }
 
-.tickets-feedback__btn {
+.tickets-feedback__submit {
   @media (max-width: $screen-md) {
     letter-spacing: -0.4px;
   }
@@ -121,8 +122,10 @@
 
 .js .tickets-feedback--open .tickets-feedback {
   display: block;
+  animation: zoomIn 0.3s;
 
   @media (max-width: $screen-md) {
+    animation: none;
     transform: translateX(0);
   }
 }

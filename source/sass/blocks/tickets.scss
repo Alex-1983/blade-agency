@@ -566,7 +566,7 @@
 
   &--purple {
     color: $white;
-    border: none;
+    border-color: rgba(208, 215, 221, 0);
     background-color: $purple;
   }
 
@@ -576,5 +576,11 @@
     @media (max-width: $screen-md) {
       margin-left: 2vw;
     }
+  }
+
+  &:hover {
+    color: $white;
+    background-color: $yellow;
+    border-color: rgba(208, 215, 221, 0);
   }
 }
